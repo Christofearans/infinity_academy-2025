@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infinity Academy</title>
+  <style>
+    :root {
+      --primary-color: #2d2d82;
+      --secondary-color: #1a73e8;
+      --accent-color: #0a7d00;
+      --light-color: #f4f4f4;
+      --dark-color: #333;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--light-color);
+      color: var(--dark-color);
+      line-height: 1.6;
+    }
+    
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 2rem 0;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .section {
+      background-color: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      border-left: 4px solid var(--primary-color);
+    }
+    
+    .section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+      border-left-color: var(--secondary-color);
+    }
+    
+    .section h2 {
+      color: var(--primary-color);
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .section p {
+      margin-bottom: 0;
+      color: #555;
+    }
+    
+    .section i {
+      font-size: 1.8rem;
+      color: var(--primary-color);
+    }
+    
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+    
+    @media (max-width: 600px) {
+      .container {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+      }
+      
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Infinity Academy</h1>
+    <p>Your learning made easy</p>
+  </header>
+
+  <div class="container">
+    <a href="study-material.html" class="section">
+      <h2><i class="fas fa-book"></i> Study Material</h2>
+      <p>Access past papers, booklets, and study guides organized by topic.</p>
+    </a>
+
+    <a href="youtube-videos.html" class="section">
+      <h2><i class="fab fa-youtube"></i> YouTube Videos</h2>
+      <p>Watch curated educational videos organized by subject and topic.</p>
+    </a>
+
+    <a href="online-recordings.html" class="section">
+      <h2><i class="fas fa-video"></i> Online Recordings</h2>
+      <p>Replay your past online class sessions with timestamps.</p>
+    </a>
+
+    <a href="quizzes.html" class="section">
+      <h2><i class="fas fa-question-circle"></i> Quizzes</h2>
+      <p>Test your knowledge with interactive topic-based quizzes.</p>
+    </a>
+
+    <a href="tutorials.html" class="section">
+      <h2><i class="fas fa-chalkboard-teacher"></i> Tutorials</h2>
+      <p>Download PDF tutorials or watch step-by-step video guides.</p>
+    </a>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Infinity Academy. All rights reserved.</p>
+  </footer>
+</body>
+</html>
