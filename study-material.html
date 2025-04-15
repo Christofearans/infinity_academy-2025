@@ -11,6 +11,7 @@
       --secondary: #1a73e8;
       --light: #f8f9fa;
       --dark: #2c3e50;
+      --maths: #FF6B6B;
     }
     
     body {
@@ -45,26 +46,44 @@
       max-width: 1000px;
       margin: 2rem auto;
       padding: 0 1rem;
-      text-align: center;
     }
     
-    .coming-soon {
-      background: white;
-      padding: 3rem 2rem;
-      border-radius: 8px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    .materials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
       margin-bottom: 2rem;
     }
     
-    .coming-soon i {
-      font-size: 3rem;
-      color: var(--primary);
+    .material-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    
+    .material-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .material-card i {
+      font-size: 2.5rem;
       margin-bottom: 1rem;
     }
     
-    .coming-soon h2 {
+    .material-card h3 {
       color: var(--primary);
       margin-bottom: 0.5rem;
+    }
+    
+    .maths-card {
+      border-top: 4px solid var(--maths);
+    }
+    
+    .maths-card i {
+      color: var(--maths);
     }
     
     .btn {
@@ -78,8 +97,16 @@
       transition: background 0.3s;
     }
     
+    .maths-btn {
+      background: var(--maths);
+    }
+    
     .btn:hover {
       background: var(--secondary);
+    }
+    
+    .maths-btn:hover {
+      background: #FF5252;
     }
     
     footer {
@@ -97,11 +124,37 @@
   </header>
 
   <div class="container">
-    <div class="coming-soon">
-      <i class="fas fa-book"></i>
-      <h2>Study Materials</h2>
-      <p>Past papers, booklets, and study guides coming soon!</p>
-      <a href="index.html" class="btn">Back to Home</a>
+    <h2 style="text-align: center; color: var(--primary); margin-bottom: 1.5rem;">Study Materials</h2>
+    
+    <div class="materials-grid">
+      <!-- Mathematics Card -->
+      <div class="material-card maths-card">
+        <i class="fas fa-square-root-alt"></i>
+        <h3>Mathematics</h3>
+        <p>Paper 1 video lessons and study resources</p>
+        <a href="maths.html" class="btn maths-btn">View Materials</a>
+      </div>
+      
+      <!-- Coming Soon Cards -->
+      <div class="material-card">
+        <i class="fas fa-flask"></i>
+        <h3>Science</h3>
+        <p>Coming soon</p>
+        <a href="#" class="btn">Coming Soon</a>
+      </div>
+      
+      <div class="material-card">
+        <i class="fas fa-language"></i>
+        <h3>Languages</h3>
+        <p>Coming soon</p>
+        <a href="#" class="btn">Coming Soon</a>
+      </div>
+    </div>
+    
+    <div style="text-align: center;">
+      <a href="index.html" class="btn">
+        <i class="fas fa-arrow-left"></i> Back to Home
+      </a>
     </div>
   </div>
 

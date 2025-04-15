@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infinity Academy - Maths Paper 1</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #2d2d82;
+      --secondary: #1a73e8;
+      --light: #f8f9fa;
+      --dark: #2c3e50;
+      --maths: #FF6B6B;
+    }
+    
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--light);
+      line-height: 1.5;
+      color: var(--dark);
+    }
+    
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+    
+    .tagline {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+    
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    
+    .subject-title {
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+    }
+    
+    .topic-section {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin-bottom: 2.5rem;
+      overflow: hidden;
+    }
+    
+    .topic-header {
+      background: var(--maths);
+      color: white;
+      padding: 0.8rem 1rem;
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+    
+    .videos-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+      padding: 1.5rem;
+    }
+    
+    .video-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    
+    .video-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      background: #000;
+    }
+    
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    
+    .video-info {
+      padding: 1rem;
+    }
+    
+    .video-title {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--dark);
+    }
+    
+    .video-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 0.5rem;
+    }
+    
+    .download-btn {
+      background: var(--maths);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: background 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    
+    .download-btn:hover {
+      background: #FF5252;
+    }
+    
+    .btn-back {
+      display: block;
+      background: var(--primary);
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border-radius: 4px;
+      text-decoration: none;
+      text-align: center;
+      max-width: 200px;
+      margin: 2rem auto 0;
+      transition: background 0.3s;
+    }
+    
+    .btn-back:hover {
+      background: var(--secondary);
+    }
+    
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      color: #666;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Infinity Academy</div>
+    <div class="tagline">Master Maths Paper 1</div>
+  </header>
+
+  <div class="container">
+    <h1 class="subject-title">Mathematics Paper 1 Videos</h1>
+    
+    <!-- Basics Section -->
+    <div class="topic-section">
+      <div class="topic-header">
+        <i class="fas fa-calculator"></i> Basics
+      </div>
+      <div class="videos-container">
+        <!-- Video 1 -->
+        <div class="video-card">
+          <div class="video-wrapper">
+            <iframe src="https://drive.google.com/file/d/1NWQkBv5FZuPlB1VYV1wYpsH5H33PAshA/preview" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-title">1. Basics Revision</div>
+            <div class="video-actions">
+              <a href="https://drive.google.com/uc?export=download&id=1NWQkBv5FZuPlB1VYV1wYpsH5H33PAshA" class="download-btn">
+                <i class="fas fa-download"></i> Download
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Video 2 -->
+        <div class="video-card">
+          <div class="video-wrapper">
+            <iframe src="https://drive.google.com/file/d/1OKZOCEvp9ZpyOTWCFRUgKJOdmbP0pX1t/preview" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-title">2. Combination Problems</div>
+            <div class="video-actions">
+              <a href="https://drive.google.com/uc?export=download&id=1OKZOCEvp9ZpyOTWCFRUgKJOdmbP0pX1t" class="download-btn">
+                <i class="fas fa-download"></i> Download
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Calculus Section -->
+    <div class="topic-section">
+      <div class="topic-header">
+        <i class="fas fa-function"></i> Calculus Videos
+      </div>
+      <div class="videos-container">
+        <!-- Video 1 -->
+        <div class="video-card">
+          <div class="video-wrapper">
+            <iframe src="https://drive.google.com/file/d/1OXyve3n7yjZRNg5zJWmvRaSl9pwPJJvR/preview" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-title">1. Introduction to Calculus</div>
+            <div class="video-actions">
+              <a href="https://drive.google.com/uc?export=download&id=1OXyve3n7yjZRNg5zJWmvRaSl9pwPJJvR" class="download-btn">
+                <i class="fas fa-download"></i> Download
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Video 2 -->
+        <div class="video-card">
+          <div class="video-wrapper">
+            <iframe src="https://drive.google.com/file/d/1O-pAoo25H1TzUsnlAYynM-2KgzFKBA3V/preview" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-title">2. F(x) Differentiation [f'(x)]</div>
+            <div class="video-actions">
+              <a href="https://drive.google.com/uc?export=download&id=1O-pAoo25H1TzUsnlAYynM-2KgzFKBA3V" class="download-btn">
+                <i class="fas fa-download"></i> Download
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Video 3 -->
+        <div class="video-card">
+          <div class="video-wrapper">
+            <iframe src="https://drive.google.com/file/d/1NxusW1TIzrpjgGi6HS-PCeAgkJSZI7Ov/preview" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-title">3. y Differentiation [dy/dx]</div>
+            <div class="video-actions">
+              <a href="https://drive.google.com/uc?export=download&id=1NxusW1TIzrpjgGi6HS-PCeAgkJSZI7Ov" class="download-btn">
+                <i class="fas fa-download"></i> Download
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Video 4 -->
+        <div class="video-card">
+          <div class="video-wrapper">
+            <iframe src="https://drive.google.com/file/d/1NuCpNs72n9xf5fPcMglKEkyOmwtHb3Lf/preview" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-title">4. Dx Differentiation [Dx(x^n)]</div>
+            <div class="video-actions">
+              <a href="https://drive.google.com/uc?export=download&id=1NuCpNs72n9xf5fPcMglKEkyOmwtHb3Lf" class="download-btn">
+                <i class="fas fa-download"></i> Download
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Video 5 -->
+        <div class="video-card">
+          <div class="video-wrapper">
+            <iframe src="https://drive.google.com/file/d/1NdwciAdJvbQuswYSwKUDhV1wH1riEhX4/preview" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-title">5. First Principles Introduction</div>
+            <div class="video-actions">
+              <a href="https://drive.google.com/uc?export=download&id=1NdwciAdJvbQuswYSwKUDhV1wH1riEhX4" class="download-btn">
+                <i class="fas fa-download"></i> Download
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Video 6 -->
+        <div class="video-card">
+          <div class="video-wrapper">
+            <iframe src="https://drive.google.com/file/d/1NWUChDECfb4BkAuSDfGZTIZ8zys1BVuE/preview" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-title">6. First Principles Problem [1/x]</div>
+            <div class="video-actions">
+              <a href="https://drive.google.com/uc?export=download&id=1NWUChDECfb4BkAuSDfGZTIZ8zys1BVuE" class="download-btn">
+                <i class="fas fa-download"></i> Download
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <a href="study-material.html" class="btn-back">
+      <i class="fas fa-arrow-left"></i> Back to Study Materials
+    </a>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Infinity Academy. All rights reserved.</p>
+  </footer>
+</body>
+</html>
